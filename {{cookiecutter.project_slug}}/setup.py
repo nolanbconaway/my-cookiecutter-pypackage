@@ -10,12 +10,17 @@ INSTALL_REQUIRES = []
 DEV_REQUIREMENTS = [
     "black-22.6.0",
     "pytest==7.1.2",
-    "coverage==6.4.1" "pytest-cov==3.0.0",
+    "coverage==6.4.1",
+    "pytest-cov==3.0.0",
     "codecov==2.1.12",
 ]
 # use readme as long description
 LONG_DESCRIPTION = (THIS_DIRECTORY / "readme.md").read_text()
-VERSION = (THIS_DIRECTORY / "src" / "{{ cookiecutter.project_slug }}" / "version").read_text().strip()
+VERSION = (
+    (THIS_DIRECTORY / "src" / "{{ cookiecutter.project_slug }}" / "version")
+    .read_text()
+    .strip()
+)
 
 setup(
     author_email="{{ cookiecutter.email }}",
