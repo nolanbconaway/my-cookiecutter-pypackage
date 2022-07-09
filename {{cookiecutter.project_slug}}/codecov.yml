@@ -1,0 +1,8 @@
+ignore:
+  - "setup.py"
+  - "tests"
+
+coverage:
+  status:
+    project: off
+    patch: off
